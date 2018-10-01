@@ -1,0 +1,10 @@
+h1{color: gold}
+img{border: solid green 2px; max-width: 300px}
+img:hover{border-radius: 7%}
+p{height: 10px;color: blue}
+a{color: black}
+a:link{color:blue}
+a:visited{color: purple;font-weight: bold;
+    text-decoration:none}
+a:hover{color: orange}
+a:active{color:green}
