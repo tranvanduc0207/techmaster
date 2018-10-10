@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #EEE685;
+}
+.banner img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 24px;
+    color: blue;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
+}
+.menu {
+       text-align: center;
+}
+.dong1 img {
+    
+    width: 120px;
+    height: 180px;
+    float: left;
+    width: 33.1111%;
+    padding: 1%;
+    margin: 5px auto;
+}
+img:hover {
+ background-color: #CDBE70;
+
+}
