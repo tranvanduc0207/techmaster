@@ -1,0 +1,17 @@
+.doc{
+  width:13%;
+  position: absolute;
+  top: 20px
+  padding: 0 1em;
+}
+.doc a {
+  background-color: green;
+  color: blue;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  bo
+}
+.doc a:hover{
+  background-color: #ccc;
+}
