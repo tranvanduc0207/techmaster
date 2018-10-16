@@ -18,12 +18,14 @@ img{
 	float: left;
 	width:33.11%;
 	padding: 10px;
+
 }
 .thumb {
 	width: 90%;
 	padding: 3px;
 	border: 1px solid #bdc3c7;
 	overflow: hidden;
+	display: block;
 }
 
 .thumb img {
@@ -72,8 +74,8 @@ h2 {	margin: 25px 0 10px 0;
 	margin-right: 4.3%;
 	position: relative;
 	font-family: Arial, sans-serif;
-	font-size: 1.3vmax;
-	animation: credit 5s ease;
+	font-size: 1.1vmax;
+	animation: credit 6s ease-out infinite;
 	animation-delay: 2s;
 	opacity: 0;
 }
