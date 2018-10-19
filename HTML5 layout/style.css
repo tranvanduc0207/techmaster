@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	vertical-align: middle;
+	border-radius: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 2.4vmin;
+
+}
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 1%;
+}
+header {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 30%;
+	margin: auto;
+}
+
+header img {
+	box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5)
+}
+
+header h2 {
+	position: absolute;
+	bottom: 10%;
+	margin-left: 3%;
+	font-family: Arial, sans-serif;
+	font-size: 5vmin;
+	color: #3dff00;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+	width: 100%;
+}
+
+nav ul {
+	margin: 0.5% auto;
+	text-align: center;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 12%;
+	padding: 0.5% 0;
+	border: 1px solid #00ff14;
+}
+
+nav ul li a {
+	font-family: Helvetica, sans-serif;
+	font-size: 2.2vmin;
+	font-weight: bold;
+	color: #000000;
+}
+
+nav ul li:hover {
+	background-color: #0014ff;
+}
+
+nav ul li:hover a {
+	color: #ffffff;
+	font-weight: normal;
+}
+#wrap:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+section {
+	float: left;
+	width: 70%;
+}
+article {
+	width: 95%;
+}
+
+article h1 {
+	font-size: 4vmin;
+	color: red;
+}
+
+article p {
+	font-size: 3vmin;
+	text-align: justify;
+	
+}
+aside {
+	margin-top: 2%;
+	float: right;
+	width: 30%;
+	text-align: center;
+	border-left: 2.5px solid #757575;
+	color: #25ff00;
+	background: rgba(0,0,0,0.5);
+}
+
+aside img {
+	margin: 10%;
+	width: 80%;
+	box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.5)
+}
+
+aside p {
+	text-align: justify;
+	padding: 0% 10% 10%;
+	font-size: 3vmin;
+}
+footer {
+	margin-top: 1%;
+	display: flex;
+
+}
+footer div {
+	flex: 1;
+	margin-left: 5%;
+	margin-bottom: 1%;
+
+}
+footer .right {
+	padding-right: 1%;
+}
+footer address {
+	flex: 3;
+	font-size: 2.5vmin;
+}
+ul {
+list-style: list-style-image: url(http://0.gravatar.com/avatar/a2367a2…?s=30&d=identicon&r=G);
+}
