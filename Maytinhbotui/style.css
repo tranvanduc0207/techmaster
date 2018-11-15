@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+.wrap {
+	margin-top: 10%;
+	border: 2px solid #757575;
+	border-radius: 5px;
+	background-color: #1eff0030;
+}
+
+.title {
+	font-family: Arial, sans-serif;
+	margin-top: 3%;
+	color: #444444;
+}
+
+#display {
+	width: 90%;
+	height: 50px;
+	border-radius: 3px;
+	margin: 4%;
+	padding-right: 1%;
+	font-size: 30px;
+	text-align: right;
+	font-family: Arial, sans-serif;
+	color: #464646;
+}
+
+#keys {
+	margin-bottom: 4%;
+}
+.key {
+	cursor: pointer;
+	font-size: 20px;
+	width: 20%;
+	height: 50px;
+	margin: 1%;
+	border-radius: 3px;
+}
+.ac {
+	background-color: gray;
+}
+.op {
+	background-color: #008073;
+}
+.ad {
+	background-color: pink;
+}
