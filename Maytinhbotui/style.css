@@ -8,8 +8,12 @@ body {
 	max-width: 400px;
 	margin: auto;
 	text-align: center;
-}
+	background-image: url("bg.jpg");
 
+}
+#bg {
+
+}
 .wrap {
 	margin-top: 10%;
 	border: 2px solid #757575;
