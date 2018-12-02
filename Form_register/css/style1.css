@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg');
+}
+div {
+	margin: auto;
+	width: 490px;
+	padding: 20px;
+	background: rgb(115, 154, 189);
+	border-radius: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 35px;
+	margin: 0px 0 20px 0;
+	color: blue;
+}
+p {
+	padding: 10px 20px;
+	margin: 0 0 20px 0;
+	border: none;
+	background: white;
+	color: red;
+	font-size: 14px;
+}
