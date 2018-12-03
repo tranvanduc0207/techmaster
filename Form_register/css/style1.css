@@ -8,6 +8,7 @@ body{
 }
 div {
 	margin: auto;
+	margin-top: 5%;
 	width: 490px;
 	padding: 20px;
 	background: rgb(115, 154, 189);
