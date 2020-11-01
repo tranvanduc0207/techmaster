@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.span_error{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+Nhập họ tên
+<input type="text" id='ho_ten'>
+<span class="span_error" id="error_ho_ten">
+	
+</span>
+<br>
+Tên đăng nhập
+<input type="text" id="ten_dang_nhap">
+<span class="span_error" id="error_ten_dang_nhap">
+	
+</span>
+<br>
+Email
+<input type="text" id="your_email">
+<span class="span_error" id="error_your_email">
+	
+</span>
+<br>
+Mật khẩu
+<input type="password" id="mat_khau">
+<span class="span_error" id="error_mat_khau">
+	
+</span>
+<br>
+Nhập lại mật khẩu
+<input type="password" id="nhap_lai_mat_khau">
+<span class="span_error" id="error_nhap_lai_mat_khau">
+	
+</span>
+<br>
+Giới tính
+<input type="radio" name="gioi_tinh"> Nam
+<input type="radio" name="gioi_tinh"> Nữ
+<span class="span_error" id="error_gioi_tinh">
+	
+</span>
+<br>
+Ngành
+<select id="nganh">
+	<option value="0">Chọn ngành bạn muốn</option>
+	<option value="1">Lập trình</option>
+	<option value="2">Quản trị</option>
+</select>
+<span class="span_error" id="error_nganh">
+	
+</span>
+<br>
+<br>
+<textarea id="comment">
+	
+</textarea>
+<span class="span_error" id="error_comment">
+	
+</span>
+<br>
+<br>
+<button onclick="return dang_ky()">
+	Đăng ký
+</button>
+<script type="text/javascript">
+function dang_ky() {
+//HỌ tên
+	var ho_ten = document.getElementById('ho_ten').value;
+	var ho_ten_regex = /^[A-Za-z ]{2,}$/;
+	if(ho_ten_regex.test(ho_ten)){
+		document.getElementById('error_ho_ten').innerHTML = '';
+	}	
+	else{
+		document.getElementById('error_ho_ten').innerHTML = 'Bạn nhập sai rồi';
+	}
+//Tên đăng nhập
+	var ten_dang_nhap = document.getElementById('ten_dang_nhap').value;
+	var ten_dang_nhap_regex = /^[a-z._]{4,}$/;
+	if(ten_dang_nhap_regex.test(ten_dang_nhap)){
+		document.getElementById('error_ten_dang_nhap').innerHTML = '';
+	}	
+	else{
+		document.getElementById('error_ten_dang_nhap').innerHTML = 'Bạn nhập sai rồi';
+	}
+//Email
+	var your_email = document.getElementById('your_email').value;
+	var your_email_regex = /^^[A-Za-z][A-Za-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+	if(your_email_regex.test(your_email)){
+		document.getElementById('error_your_email').innerHTML = '';
+	}	
+	else{
+		document.getElementById('error_your_email').innerHTML = 'Bạn nhập sai rồi';
+	}
+//Mật khẩu
+	var mat_khau = document.getElementById('mat_khau').value;
+	if(mat_khau!=''){
+		document.getElementById('error_mat_khau').innerHTML = '';
+	}
+	else{
+		document.getElementById('error_mat_khau').innerHTML = 'Mật khẩu không được để trống';
+	}
+//Nhập lại mật khẩu
+	var nhap_lai_mat_khau = document.getElementById('nhap_lai_mat_khau').value;
+	if(mat_khau==nhap_lai_mat_khau){
+		document.getElementById('error_nhap_lai_mat_khau').innerHTML = '';
+	}
+	else{
+		document.getElementById('error_nhap_lai_mat_khau').innerHTML = 'Nhập lại mật khẩu sai rồi';
+	}
+//Giới tính
+	var mang_gioi_tinh = document.getElementsByName('gioi_tinh');
+	var check_gioi_tinh = false;
+	for(var i = 0; i<mang_gioi_tinh.length; i++){
+		if (mang_gioi_tinh[i].checked) {
+			check_gioi_tinh=true;
+		}
+		if(check_gioi_tinh==false){
+			document.getElementById('error_gioi_tinh').innerHTML = 'Ban phai chon gioi tinh';
+		}
+		else{
+		document.getElementById('error_gioi_tinh').innerHTML = '';
+		}
+	}
+//Ngành
+	var nganh = document.getElementById('nganh').value;
+	if(nganh!=0){
+		document.getElementById('error_nganh').innerHTML = '';
+	}
+	else{
+		document.getElementById('error_nganh').innerHTML = 'Bạn phải chọn ngành';
+	}
+
+//Comment
+	var comment = document.getElementById('comment').value;
+	var comment_regex = /^[A-Za-z .,!@#$()!]$/;
+	if(ho_ten_regex.test(comment)){
+		document.getElementById('error_comment').innerHTML = '';
+	}	
+	else{
+		document.getElementById('error_comment').innerHTML = 'Bạn nhập sai rồi';
+	}
+}
+</script>
+</body>
+</html>
