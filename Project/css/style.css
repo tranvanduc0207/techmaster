@@ -1,0 +1,328 @@
+/*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*==Style cơ bản cho website==*/
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: MS Serif,New York,sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+/*--Style slide banner--*/
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/*==Style menu==*/
+
+/*==Style cho menu tổng===*/
+.menu{
+  width: 100%;
+  border-bottom: 5px inset #E500B2;
+  position: relative;
+  display: flex;
+}
+/*==Style logo===*/
+.logo{
+  width: 10%;
+  height: 120px;
+}
+.logo > a > img{ 
+  width: 100% ;
+  display: inline-block;
+  height: 100%;
+  line-height: 120px;
+}
+/*--Style menu chính--*/
+.menu_chinh {
+  list-style-type: none;
+  text-align: center;
+  margin: auto 20% auto auto;
+  width: 70%;
+}
+.menu_chinh li {
+  display: inline-block;
+  width: 170px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -5px;
+}
+.menu_chinh li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  color: #3d4042;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: -5px;
+  width: 100%;
+  height: 100%;
+}
+/*===Style hover menu==*/
+.menu_chinh a:hover {
+  background: #F71BFF;
+  color: #333;
+  display: block;
+  border-radius: 5px;
+}
+
+/*==Dropdown Menu==*/
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 2px;
+  background-color: white;
+  z-index: 2;
+  width: 220px !important;
+}
+.sub-menu a {
+  text-align: left;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background-color: white !important;
+}
+.sub-menu li a:hover{
+  left: 5px;
+  color: #F71BFF !important;
+}
+.menu li {
+  position: relative;
+}
+.menu li:hover .sub-menu {
+  display: block;
+  left: 10px;
+  color: #F71BFF !important;
+}
+.btn{
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+  font-size: 20px;
+  font-family: MS Serif,New York,sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+/*--Style nút đăng nhập---*/
+.dang_nhap{
+      position: absolute;
+        position: absolute;
+    top: 40%;
+    right: 15%;
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    background: lightpink;
+    line-height: 25px;
+}
+/*==Style cart===*/
+#cart{
+  position: absolute;
+  right: 100px;
+  top: 20%;
+  font-size: 40px;
+  color: #ff4566;
+}
+/*==Style search===*/
+.menu .search-container {
+  margin-right: 15px;
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+}
+.menu input[type=search] {
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #dddddd;
+  border-radius: 5px 0 0 5px;
+}
+.menu .search-container button {
+  float: right;
+  width: 40px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.menu .search-container button:hover {
+  background: #ccc;
+}
+/*===Footer==*/
+/*==Style tổng footer===*/
+.wrap{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+/*==Style từng phần===*/
+.footer{
+  margin: 20px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  width: 400px;
+}
+ul,li{
+  list-style: none;
+
+}
+.footer-mid{
+  flex-grow: 8;
+
+}
+
+.fab{
+  width: 50px;
+  height: 50px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+/*==Form đăng ký===*/
+.inPut{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+.inPut:focus{
+background-color: #ddd;
+outline: none;
+}
+.footer button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;/* con trỏ chuột khi hover vào*/
+  width: 100%;
+  opacity: 0.9;
+  font-size:16px;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  border-radius:10px;
+}
+.footer button:hover {
+  opacity:1;
+}
+.footer table,th,td,tr{
+    border: none;
+}
+/*--Back to top---*/
+  #back-to-top{
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      color: white;
+      font-size: 20px;
+      bottom: 50px;
+      right: 40px;
+      opacity: 0.9;
+      border-radius: 2px;
+      background-color: #FE1B1B;
+      text-align: center;
+      margin: 0 auto;
+      text-decoration: none;
+      z-index: 999;
+      cursor: pointer;
+      display: none;
+    }
+    /*--Style hiển thị sản phẩm*/
+    .grid-container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 300px 300px 300px 300px;
+  padding: 20px;
+}
+.grid-item {
+  font-size: 24px;
+  box-shadow: ;
+  text-align: center;
+  box-shadow: 2px 1px 20px -9px rgba(0,0,0,0.38);
+}
+.grid-item button{
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;/* con trỏ chuột khi hover vào*/
+  width: 150px;
+  opacity: 0.9;
+  font-size:16px;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  border-radius:10px;
+}
+  .grid-item img{
+    transition: transform .2s;
+    height: 350px;
+    width: 100%;
+  }
+  .grid-item img:hover{
+    transform: scale(1.1); 
+    background-color: gray;
+    opacity: 0.7;
+  }
+  .so_trang{
+    font-size: 20px;
+    padding: 4px;
+
+  }
+  .tieu_de_tim_kiem{
+    border: none;
+    width: 400px;
+    border-bottom: 1px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-family: MS Serif,New York,sans-serif;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }

@@ -1,0 +1,37 @@
+.admin_view table, th, td{
+    border:1px solid #ccc;
+}
+.admin_view table{
+    border-collapse:collapse;
+    width:100%;
+}
+.admin_view td, th{
+    text-align:left;
+    padding:5px;
+}
+.admin_view tr:hover{
+    background-color:#ddd;
+    cursor:pointer;
+}
+.admin_view button {
+    background-color: #0eb7f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;/* con trỏ chuột khi hover vào*/
+    width: 300px;
+    opacity: 0.9;
+    font-size:16px;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    border-radius:10px;
+}
+.admin_view button:hover {
+    opacity:1;
+}
+/*==Cắt chữ phần mô tả===*/
+.truncate-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

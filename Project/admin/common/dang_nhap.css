@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*end reset*/
+body {
+    text-align: center;
+    font-family: MS Serif,New York,sans-serif;
+}
+
+/*--header--*/
+.container {
+    padding: 0em;
+    background: rgba(0, 0, 0, 0.42)
+}
+
+/*--main--*/
+.content_container {
+    margin: 7em 0em 3em;
+}
+.login h2 {
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 0.3em;
+    margin-bottom: 2em;
+    font-weight: 400;
+}
+.in_content input[type="email"], .in_content input[type="password"] {
+    outline: none;
+    font-size: 1em;
+    padding: 1em 3em 1em 1em;
+    border: none;
+    margin-bottom: 0.3em;
+    background: none;
+    border: 1px solid pink;
+    width: 82%;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Oleo Script', cursive;
+    letter-spacing: 1px;
+}
+.in_content {
+    position: relative;
+    width: 23%;
+    margin: 0 auto;
+}
+.forgot_password h6 a {
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: right;
+    display: inherit;/*kế thừa phần thuộc tính của phần tử mẹ*/
+}
+.forgot_password {
+    margin-top: 2em;
+}
+.button {
+    margin-top: 3em;
+}
+span.icon1, span.icon2 {
+    /*color: #fff;*/
+    font-size: 1.1em;
+    position: absolute;
+    color: black;
+    right:5%;
+}
+span.icon1 {
+    top: 23%;
+}
+span.icon2 {
+    top: 49%;
+}
+.in_content input[type="submit"] {
+    color: white;
+    background: blue;
+    border: none;
+    margin-bottom: 20px;
+    padding: 8px 0px;
+    outline: none;
+    width: 38%;
+    font-size: 1.1em;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Oleo Script', cursive;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.in_content input[type="submit"]:hover {
+    background: #fff;
+    color: black;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -o-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -ms-transition:0.5s all;
+}
