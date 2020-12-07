@@ -107,7 +107,7 @@ li {
 }
 
 .maxbox li:nth-child(6) {
-    background: url('../images/3.jpg') no-repeat 0 0;
+    background: url('../images/background.jpg') no-repeat 0 0;
     transform: rotateY(90deg) translateZ(100px);
     background-size: 100% 100%;
 }
